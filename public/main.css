@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+button{
+    color: transparent; 
+    background-color: white; 
+    border-color: transparent;
+    border: none;
+    outline: none;
+}
+button :hover{
+    cursor: pointer;
+}
+
+#locator-button{
+    position: absolute;
+    margin-top: 12px;
+    right: 0;
+    margin-right: 8vw;
+}
+
+
+.loading {
+    background-color: #7c75e3;
+    color: #7c75e3;
+}
+
+.location-button{
+    width: 20px;
+}
+
+.header-logo{
+    width: 40%;
+    max-width: 220px;
+    margin-top: 15px;
+}
+
+.form-link-text{
+    text-decoration: none;
+    color: rgb(97, 97, 97);
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-weight: lighter;
+}
+
+.filter{
+    width: 92%;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.536);
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 130px;
+    margin-bottom: 25px;
+}
+
+.filter-heading{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgba(0, 0, 0, 0.71);
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.toggle{
+    color: white;
+    padding: 2px;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-size: 75%;
+    font-weight: lighter;
+    margin: 7px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.536);
+    border-radius: 50px;
+    color: #797979;
+
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.spacer{
+    height: 8px;
+}
+
+.container{
+    margin-top: -10px;
+}
+
+input:checked + .toggle1{
+    background-color: #7c75e3;
+    color: #ffffff;
+}
+
+.toggle-box{
+    position: absolute;
+    left: -9999px;
+}
+
+.background{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.536);
+    margin: 0 auto;
+    margin-top: 13px;
+    width: 90%;
+    border-radius: 10px;
+    height: 90px;
+    max-width: 750px;
+}
+
+.name{
+    color: #1a0dab;
+    opacity: 100%;
+    font-size: 19px;
+    position: relative;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.type{
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: -22px;
+    margin-left: 55%;
+    margin-bottom: 2px;
+}
+
+.emoji{
+    margin-left: 57%;
+    font-size: 25px;
+    margin-bottom: -39px;
+}
+
+.delivery-area{
+    color: rgba(0, 0, 0, 0.64);
+    font-size: 15px;
+    margin-top: -3px;
+}
+
+.phone{
+    color: rgba(0, 0, 0, 0.54);
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+.address{
+    color: rgba(0, 0, 0, 0.28);
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+.website-button{
+    width: 20px;
+    position: absolute;
+    margin-left: 75%;
+}
+
+.business{
+    text-align: left;
+    padding-left: 10px;
+}
+
+/*Search-Start*/
+.search-section{
+    margin-top:23px;
+    margin-bottom: 20px;
+}
+
+.input-text[type=text]{
+    padding: 10px;
+    padding-left: 55px;
+    width: 78%;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.536);
+    background-image: url('img/Group\ 44.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    height: 20px;
+    outline: none;
+    color: black;
+    font-size: 15px;
+    font-weight: lighter;
+    max-width: 1000px;
+
+}
+
+::placeholder {
+    color: black;
+    font-size: 15px;
+    font-weight: lighter;
+}
+/*Search-End*/
+
+
+@media (min-width: 900px){
+    .website-button{
+        width: 20px;
+        position: absolute;
+        margin-left: 650px;
+        margin-top: -2px;
+    }
+}
+
+@media(min-width: 1300px){
+
+    #locator-button{
+        position: absolute;
+        margin-top: 12px;
+        right: 0;
+        margin-right: 20%;
+    }
+}
+
+@media(min-width: 1750px){
+
+    #locator-button{
+        position: absolute;
+        margin-top: 12px;
+        right: 0;
+        margin-right: 30%;
+    }
+}

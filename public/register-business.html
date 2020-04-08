@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Register a business</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+
+    <script>
+
+        // Initialize Cloud Firestore through Firebase
+        firebase.initializeApp({
+            apiKey: 'AIzaSyBQo3KkP2-EcDUyaj8QG1LdzDgFmqrB3GA',
+            authDomain: 'whodeliverstomyhome.firebase.com',
+            projectId: 'whodeliverstomyhome'
+        });
+
+        var db = firebase.firestore();
+
+        function registerBusiness(event) {
+
+            db.collection("businesses").add({
+                name: $('#name').val(),
+                type: $('#type').val(),
+                product: $('#product').val(),
+                phone: $('#phone').val(),
+                address: $('#address').val(),
+                delivery_areas: $('#delivery_areas').val(),
+                website: $('#website').val(),
+            })
+            .then(function(docRef) {
+                console.log("Document written with ID: ", docRef.id);
+            })
+            .catch(function(error) {
+                console.error("Error adding document: ", error);
+            });
+
+            return false;
+        }
+             
+    </script>    
+</head>
+<body>
+    <h3 class="form-header">Please fill out this form to register a business with our database</h3>
+
+        <form id='business' action="JavaScript:registerBusiness()" class="reg-business">
+                <div class="reg-business-box"></div>
+                <ul class="form">
+                    <li class="business-name">
+                        <label for="name">Name:</label>
+                        <br>
+                        <input type="text" id="name" name="name">
+                    </li>
+                    <li><br></li>
+                    <li class="business-type">
+                        <label for="type">Type:</label>
+                        <br>
+                        <select id="type" name="type">
+                                <option value="Diary">Diary</option>
+                                <option value="Bakery">Bakery</option>
+                                <option value="Pharmacy">Pharmacy</option>
+                                <option value="Butchery">Butchery</option>
+                                <option value="Supermarket">Supermarket</option>
+                                <option value="Beverage">Beverage</option>
+                                <option value="Produce">Produce</option>
+                                <option value="Seafood">Seafood</option>
+                                <option value="Apparel">Apparel</option>
+                        </select>
+                    </li>
+                    <li><br></li>
+
+                    <li>
+                            <label for="product">Product:</label>
+                            <br>
+                            <input type="text" id="product" name="product">
+                    </li>
+
+                    <li>
+                            <label for="phone">Phone Number:</label>
+                            <br>
+                            <input type="text" id="phone" name="phone">
+                    </li>
+                    <li><br></li>
+                    <li>
+                            <label for="address">Address</label>
+                            <br>
+                            <input type="text" id="address" name="address">
+                    </li>
+                    <li><br></li>
+                    <li class="delivery_areas">
+                        <label for="delivery_areas">Delivery Areas:</label>
+                        <br>
+                        <input type="text" id="delivery_areas" name="delivery_areas">
+                    </li>
+                    <li><br></li>
+                    <li class="website-form">
+                            <label for="website">Website:</label>
+                            <br>
+                            <input type="text" id="website" name="website">
+                    </li>
+
+                    <li><br></li>
+                    <li><input type="submit" value="Submit"></li>
+                </ul>
+                    
+                    
+                    
+            </form>
+</body>
+</html>
