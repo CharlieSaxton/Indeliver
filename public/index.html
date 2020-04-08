@@ -5,212 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
-    <title>Indelivered</title>
+    <title>Indeliver</title>
     <link rel="icon" href="img/icon-logo.svg">
-
+ 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyBrGyhokdbkldz6M1bH98fy6A6sNsg0ncI"></script>
 
-
-    <script>
-
-        // Initialize Cloud Firestore through Firebase
-        firebase.initializeApp({
-            apiKey: 'AIzaSyBQo3KkP2-EcDUyaj8QG1LdzDgFmqrB3GA',
-            authDomain: 'whodeliverstomyhome.firebase.com',
-            projectId: 'whodeliverstomyhome'
-        });
-
-        var db = firebase.firestore();
-
-        var filters;
-
-        var locatorSection = $("#locator-button");
-        function locatorButtonPressed() {
-            locatorSection.addClass("loading");
-
-            navigator.geolocation.getCurrentPosition(function (position) {
-                    getUserAddressBy(position.coords.latitude, position.coords.longitude);
-                },
-                function (error) {
-                    locatorSection.removeClass("loading");
-                    alert("The Locator was denied :( Please add your address manually");
-                })
-        }
-
-        function getUserAddressBy(lat, long) {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    var address = JSON.parse(this.responseText);
-                    var addressStr = address.results[0].formatted_address
-                    var addressArr = addressStr.split(",");
-                    addressArr.shift(2);
-                    addressArr[1] = addressArr[1].substr(0, addressArr[1].length - 5);
-                    var addressFinal = addressArr.toString().substring(1);
-                    setAddressToInputField(addressFinal);
-                    console.log(addressFinal);
-                    document.getElementById("address").focus();
-                }
-            };
-            xhttp.open("GET", "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + lat + "," + long + "&key=AIzaSyBrGyhokdbkldz6M1bH98fy6A6sNsg0ncI", true);
-            xhttp.send();
-        }
-
-        function setAddressToInputField(address) {
-            document.getElementById("address").value = address;
-            locatorSection.removeClass("loading");
-        }
-
-        function search(event) {
-
-            var userAddress = " " + document.getElementById("address").value;        
-            var subAddress = userAddress.split(",")
-            console.log("subaddress " + subAddress);
-         
-
-            $("#filter-section").show();
-
-            $(results).html("");
-            filters = [];
-            db.collection("businesses").get().then((querySnapshot) => {
-                querySnapshot.forEach((doc) => {    
-   
-                    var deliveryArea = (`${doc.data().delivery_areas}`);
-                    console.log(deliveryArea);
-
-                    if(" " + deliveryArea == subAddress[0] || " " + deliveryArea == subAddress[1] || " " + deliveryArea == subAddress[2] || 
-                    " " + deliveryArea == subAddress[3] || " " + deliveryArea == subAddress[4] || " " + deliveryArea == subAddress[5] || " " + deliveryArea == subAddress[6]){
-
-                        filters.push(doc.data().type);
-                        var $businessDiv = $(`<div class="background business ${doc.data().type} ${doc.data().delivery_areas}" onclick="window.open('${doc.data().website}', '_blank');"/>`)
-                        $businessDiv.append(`<p class='name name-${doc.data().type}' >${doc.data().name}</p>`);
-                        $businessDiv.append(`<p class='type'>${doc.data().type}</p>`);
-
-                        if (`${doc.data().type}` == "Bakery"){
-                            $businessDiv.append(`<p class='emoji'>&#129366;</p>`);
-                        }else if (`${doc.data().type}` == "Produce"){
-                            $businessDiv.append(`<p class='emoji'>&#129382;</p>`);
-                        }else if (`${doc.data().type}` == "Beverage"){
-                            $businessDiv.append(`<p class='emoji'>&#127870;</p>`);
-                        }else if (`${doc.data().type}` == "Seafood"){
-                            $businessDiv.append(`<p class='emoji'>&#127844;</p>`);
-                        }else if (`${doc.data().type}` == "Pharmacy"){
-                            $businessDiv.append(`<p class='emoji'>💊</p>`);
-                        }else if (`${doc.data().type}` == "Butchery"){
-                            $businessDiv.append(`<p class='emoji'>🥩</p>`);
-                        }else if (`${doc.data().type}` == "Apparel"){
-                            $businessDiv.append(`<p class='emoji'>&#128085;</p>`);
-                        }else if (`${doc.data().type}` == "Diary"){
-                            $businessDiv.append(`<p class='emoji'>&#129530;</p>`);
-                        }else if (`${doc.data().type}` == "Supermarket"){
-                            $businessDiv.append(`<p class='emoji'>&#128722;</p>`);
-                        }
-
-                        $businessDiv.append(`<a href="${doc.data().website}" target="_blank" class='website'><img src="img/Arrow.png" alt="Learn More" class="website-button"></a>`);
-                        $businessDiv.append(`<p class='delivery-area'>Delivers to ${doc.data().delivery_areas}</p>`);
-                        $businessDiv.append(`<p class='phone'>Phone: ${doc.data().phone}</p>`);
-                        $businessDiv.append(`<p class='address'>Address: ${doc.data().address}</p>`);  
-                        $(results).append($businessDiv);
-                    }
-                });
-
-                $("#filter-section .container").html("");
-                var i = 0;
-                var addedFilters = [];
-                filters.forEach((filter) => {
-                    if (!addedFilters.includes(filter)) {
-                        i++
-                        if (i == 3){
-                            var spacer = $(`<div class="spacer"></div>`);
-                            i = 0;
-                        }else{
-                            var spacer = null;
-                        }
-
-                        var filterElement = $(`<input type="checkbox" checked="yes" id="${filter}checkbox" name="${filter}" value="${filter}" onclick="filter()"" class="toggle-box">`);
-                        var filterElement2 = $(`<Label for="${filter}checkbox" class="toggle toggle1">${filter}</Label>`);
-                        
-                        $("#filter-section .container").append(filterElement, filterElement2, spacer);
-                        addedFilters.push(filter);
-                    }
-                    
-                });
-
-            });
-
-            return false;
-        }
-
-        function filter() {
-            filters.forEach((filter) => {
-                var checkboxid = "#" + filter + "checkbox";
-                var businessSelector = "." + filter;
-                var stickyFilterSelector = "." + filter + "-key";
-                if($(checkboxid).is(":checked")) {
-                    $(businessSelector).show();
-                    $(stickyFilterSelector).show();
-                } else {
-                    $(businessSelector).hide();
-                    $(stickyFilterSelector).hide();
-                }
-            })
-        }
-             
-        var searchInput = 'address';
-
-        $(document).ready(function () {
-            var autocomplete;
-            autocomplete = new google.maps.places.Autocomplete((document.getElementById(searchInput)), {
-                types: ['address'],
-                componentRestrictions: {country: 'nz'}
-            });
-            autocomplete.addListener('place_changed', function() {
-                $("#search-form").submit();
-            });
-        });
-        
-    </script>
-
+    <script src="app.js"></script>
 
 </head>
+
 <body>
     <a href="index.html"><img src="img/Full-logo.svg" alt="Indelivered" class="header-logo"></a>
     <div class="search-section">
-            <form id="search-form" action="JavaScript:search()" class="search">
-                    <div class="search-box"></div>
-                    <button  type="button" id="locator-button" onclick="locatorButtonPressed()"><img src="img/Location-Button.svg" alt="Get Location" class="location-button"></button>
-                    <input type="text" id="address" name="address" class="input-text" placeholder=" Search address" autofocus>
-                        
-            </form>
-            
-    
-
+        <form id="search-form" action="JavaScript:search()" class="search">
+            <div id="locator-button" class="locator-button"></div>
+            <input type="text" id="address" name="address" class="input-text" placeholder=" Search address" autofocus>       
+        </form>
     </div>
     
 
-    <div class="filter" id="filter-section">
-            <h1 class="filter-heading">Select Filters</h1>
+    <div class="filter-section" id="filter-section">
+        <h1 class="filter-heading">Select Filters</h1>
+        <div class="filters"></div>       
+    </div>
 
-            <form>
-                <div class="container"></div>       
-            </form>
-        </div>
+    <p id="no-results">No results found</p>
+
     <div id='results' ></div>
-        
+
     <br>
 
-    <a href="register-business.html" class="form-link-text">Register a business</a>  
-        
-
-
+    <a href="register-business.html" class="form-link-text" target="_blank">Register a business</a>  
 
     </div>
 
-    <script>
-        $("#filter-section").hide();
-    </script>
 </body>
 </html>
