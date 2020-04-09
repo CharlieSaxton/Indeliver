@@ -52,7 +52,7 @@
         var subAddress = userAddress.split(",")
         console.log("subaddress " + subAddress);
      
-
+        $(".info-container").hide();
         $("#filter-section").show();
 
         $(results).html("");
@@ -61,39 +61,14 @@
             querySnapshot.forEach((doc) => {    
 
                 var deliveryArea = (`${doc.data().delivery_areas}`);
+                var deliveryAreaArr = deliveryArea.split(",");
+
                 console.log(deliveryArea);
 
-                if(" " + deliveryArea == subAddress[0] || " " + deliveryArea == subAddress[1] || " " + deliveryArea == subAddress[2] || 
-                " " + deliveryArea == subAddress[3] || " " + deliveryArea == subAddress[4] || " " + deliveryArea == subAddress[5] || " " + deliveryArea == subAddress[6]){
+                if(deliveryAreaCheck(deliveryAreaArr, subAddress)){
 
                     filters.push(doc.data().type);
-                    var $businessDiv = $(`<div class="background business ${doc.data().type} ${doc.data().delivery_areas}" onclick="window.open('${doc.data().website}', '_blank');"/>`)
-                    $businessDiv.append(`<p class='name name-${doc.data().type}' >${doc.data().name}</p>`);
-
-                    if (`${doc.data().type}` == "Bakery"){
-                        $businessDiv.append(`<p class='emoji'>&#129366; Bakery</p>`);
-                    }else if (`${doc.data().type}` == "Produce"){
-                        $businessDiv.append(`<p class='emoji'>&#129382; Produce</p>`);
-                    }else if (`${doc.data().type}` == "Beverage"){
-                        $businessDiv.append(`<p class='emoji'>&#127870; Beverage</p>`);
-                    }else if (`${doc.data().type}` == "Seafood"){
-                        $businessDiv.append(`<p class='emoji'>&#127844; Seafood</p>`);
-                    }else if (`${doc.data().type}` == "Pharmacy"){
-                        $businessDiv.append(`<p class='emoji'>💊 Pharmacy</p>`);
-                    }else if (`${doc.data().type}` == "Butchery"){
-                        $businessDiv.append(`<p class='emoji'>🥩 Butchery</p>`);
-                    }else if (`${doc.data().type}` == "Apparel"){
-                        $businessDiv.append(`<p class='emoji'>&#128085; Apparel</p>`);
-                    }else if (`${doc.data().type}` == "Diary"){
-                        $businessDiv.append(`<p class='emoji'>&#129530; Diary</p>`);
-                    }else if (`${doc.data().type}` == "Supermarket"){
-                        $businessDiv.append(`<p class='emoji'>&#128722; Supermarket</p>`);
-                    }
-
-                    $businessDiv.append(`<a href="${doc.data().website}" target="_blank" class='website'><img src="img/Arrow.png" alt="Learn More" class="website-button"></a>`);
-                    $businessDiv.append(`<p class='delivery-area'>Delivers to ${doc.data().delivery_areas}</p>`);
-                    $businessDiv.append(`<p class='phone'>Phone: ${doc.data().phone}</p>`);
-                    $businessDiv.append(`<p class='address'>Address: ${doc.data().address}</p>`);  
+                    var $businessDiv = makeBusinessDiv(doc, deliveryAreaArr);  
                     $(results).append($businessDiv);
                 }
             });
@@ -130,6 +105,51 @@
         });
 
         return false;
+
+        function makeBusinessDiv(doc, deliveryAreaArr) {
+            var $businessDiv = $(`<div class="background business ${doc.data().type} ${doc.data().delivery_areas}" onclick="window.open('${doc.data().website}', '_blank');"/>`);
+            $businessDiv.append(`<p class='name name-${doc.data().type}' >${doc.data().name}</p>`);
+
+            $businessDiv.append(`<a href="${doc.data().website}" target="_blank" class='website'><img src="img/Arrow.png" alt="Learn More" class="website-button"></a>`);
+            if (deliveryAreaArr.length == 1) {
+                $businessDiv.append(`<p class='delivery-area'>Delivers to ${deliveryAreaArr[0]}</p>`);
+            }
+            else {
+                $businessDiv.append(`<p class='delivery-area'>Delivers to ${deliveryAreaArr[0]}...</p>`);
+            }
+
+            //needs changingvvvvvvvvvvvv
+            if (`${doc.data().type}` == "Baked") {
+                $businessDiv.append(`<p class='emoji'>&#129366; Baked</p>`);
+            }
+            else if (`${doc.data().type}` == "Produce") {
+                $businessDiv.append(`<p class='emoji'>&#129382; Produce</p>`);
+            }
+            else if (`${doc.data().type}` == "Beverage") {
+                $businessDiv.append(`<p class='emoji'>&#127870; Beverage</p>`);
+            }
+            else if (`${doc.data().type}` == "Seafood") {
+                $businessDiv.append(`<p class='emoji'>&#127844; Seafood</p>`);
+            }
+            else if (`${doc.data().type}` == "Health") {
+                $businessDiv.append(`<p class='emoji'>💊 Health</p>`);
+            }
+            else if (`${doc.data().type}` == "Meat") {
+                $businessDiv.append(`<p class='emoji'>🥩 Meat</p>`);
+            }
+            else if (`${doc.data().type}` == "Other") {
+                $businessDiv.append(`<p class='emoji'>&#128085; Other</p>`);
+            }
+            else if (`${doc.data().type}` == "Diary") {
+                $businessDiv.append(`<p class='emoji'>&#129371; Diary</p>`);
+            }
+            else if (`${doc.data().type}` == "Ready-Food") {
+                $businessDiv.append(`<p class='emoji'>&#128722; Ready-Food</p>`);
+            }
+            //needs changing^^^^^^^^^^^^
+
+            return $businessDiv;
+        }
     }
 
     function filter() {
@@ -166,3 +186,13 @@
         $("#filter-section").hide();
         $("#no-results").hide();
     });
+
+function deliveryAreaCheck(shop, user){
+    for(var i = 0; i < 5; i++){
+        for(var k = 0; k < 5; k++){
+            if(" " + shop[k] == user[i]){
+                return(true);
+            }
+        }
+    }
+}

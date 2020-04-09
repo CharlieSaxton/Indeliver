@@ -59,6 +59,21 @@ button :hover{
     width: 40%;
     max-width: 220px;
     margin-top: 15px;
+    margin-left: 10px;
+    
+}
+
+.info{
+    font-weight: lighter;
+    color: rgb(140, 140, 140);
+    font-size: 15px;
+}
+
+.info-container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+
 }
 
 .form-link-text{
@@ -139,45 +154,29 @@ input:checked + .toggle1{
 .name{
     color: #1a0dab;
     opacity: 100%;
-    font-size: 19px;
+    font-size: 18px;
     position: relative;
     width: 100%;
     padding-top: 5px;
 }
 
 .emoji{
-    position: absolute;
-    margin-left: 49%;
-    font-size: 75%;
-    margin-top: 5px;
-
+    font-size: 16px;
+    margin-top: 2px;
     font-weight: lighter;
     color: rgb(99, 99, 99);
 }
 
 .delivery-area{
     color: rgba(0, 0, 0, 0.64);
-    font-size: 15px;
-    margin-top: -3px;
-}
-
-.phone{
-    color: rgba(0, 0, 0, 0.54);
-    font-weight: lighter;
-    font-size: 13px;
-}
-
-.address{
-    color: rgba(0, 0, 0, 0.28);
-    font-weight: lighter;
-    font-size: 13px;
+    font-size: 17px;
 }
 
 .website-button{
-    width: 20px;
+    width: 15px;
     position: absolute;
     margin-left: 75%;
-    margin-top: -3px;
+    margin-top: 5px;
 }
 
 .business{

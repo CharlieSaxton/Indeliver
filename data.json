@@ -1,0 +1,824 @@
+[
+    {
+      "name": "Bee Fresh Farms Mānuka Honey",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "http://beefresh.nz/product-category/honey/"
+    },
+    {
+      "name": "Fudge'n Hell",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://www.fudgenhell.com"
+    },
+    {
+      "name": "Red Rabbit Coffee Co",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.redrabbitcoffee.co.nz"
+    },
+    {
+      "name": "Blush Gin",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://blushginstore.co.nz"
+    },
+    {
+      "name": "Smith Coffee",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://smith-coffee-dunedin.myshopify.com"
+    },
+    {
+      "name": "Emporio Coffee",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.emporio.co.nz"
+    },
+    {
+      "name": "Produce Direct",
+      "delivery_areas": "Auckland",
+      "type": "Produce",
+      "website": "https://producedirect.co.nz/"
+    },
+    {
+      "name": "Loburn Grove",
+      "delivery_areas": "New Zealand",
+      "type": "Produce",
+      "website": "https://www.loburngrove.co.nz"
+    },
+    {
+      "name": "Wooden Spoon Boutique Freezery",
+      "delivery_areas": "Wellington",
+      "type": "Other",
+      "website": "http://www.woodenspoonfreezery.com/shop"
+    },
+    {
+      "name": "Champagne Direct",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.champagnedirect.co.nz"
+    },
+    {
+      "name": "The Waiheke Bean Coffee",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.waihekebean.nz"
+    },
+    {
+      "name": "Dignity",
+      "delivery_areas": "New Zealand",
+      "type": "Health",
+      "website": "https://www.dignitynz.com/packages"
+    },
+    {
+      "name": "Tom & Luke",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://tomandluke.com"
+    },
+    {
+      "name": "Eruption Brewing",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.eruptionbrewing.com/shop-craft-beer-online"
+    },
+    {
+      "name": "The Epsom Salt Company",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://epsomsalt.nz/"
+    },
+    {
+      "name": "BayFarms Avocado &amp; Kiwifruit",
+      "delivery_areas": "New Zealand",
+      "type": "Produce",
+      "website": "https://www.bayfarms.net.nz"
+    },
+    {
+      "name": "Be Local Honey",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://belocal.co.nz"
+    },
+    {
+      "name": "Fresh Gourmet",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://www.freshgourmet.co.nz"
+    },
+    {
+      "name": "Apicare",
+      "delivery_areas": "New Zealand",
+      "type": "Health",
+      "website": "https://www.apicare.co.nz"
+    },
+    {
+      "name": "Espresso Workshop Coffee Roasters",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.espressoworkshop.co.nz"
+    },
+    {
+      "name": "Club Bazaar Fresh Pasta",
+      "delivery_areas": "Banks Peninsula",
+      "type": "Produce",
+      "website": "https://club-bazaar-fresh.myshopify.com"
+    },
+    {
+      "name": "Biltong Plus",
+      "delivery_areas": "New Zealand",
+      "type": "Meat",
+      "website": "http://www.biltongplus.co.nz/"
+    },
+    {
+      "name": "Forty Thieves Nut Butters",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://www.fortythieves.co.nz"
+    },
+    {
+      "name": "Coffee Supreme",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://shopnz.coffeesupreme.com/"
+    },
+    {
+      "name": "Gibbston Valley Cheese",
+      "delivery_areas": "New Zealand",
+      "type": "Diary",
+      "website": "https://www.gvcheese.co.nz"
+    },
+    {
+      "name": "Cammells Honey",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://www.cammellshoney.co.nz"
+    },
+    {
+      "name": "Good Herb Soda",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://goodherbsoda.com/"
+    },
+    {
+      "name": "Goodness Gracious",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.goodnessgracious.co.nz/retail/"
+    },
+    {
+      "name": "Beer Hug",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.beerhug.co.nz/"
+    },
+    {
+      "name": "Sujon Berryfruits",
+      "delivery_areas": "New Zealand",
+      "type": "Produce",
+      "website": "https://www.sujon.co.nz"
+    },
+    {
+      "name": "Ceres Wines",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.cereswines.co.nz/bottle-store"
+    },
+    {
+      "name": "Pamu Milk",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://pamumilk.com"
+    },
+    {
+      "name": "Online Pilates - LIVE and Recorded",
+      "delivery_areas": "New Zealand Online",
+      "type": "Other",
+      "website": "https://www.cambridgepilates.co.nz"
+    },
+    {
+      "name": "Na-Vida Distributors",
+      "delivery_areas": "New Zealand",
+      "type": "Health",
+      "website": "https://www.naturvital.co.nz"
+    },
+    {
+      "name": "Breastmates - Baby Feeding",
+      "delivery_areas": "New Zealand",
+      "type": "Health",
+      "website": "https://www.breastmates.co.nz"
+    },
+    {
+      "name": "Homegrown Farm Fresh Meats",
+      "delivery_areas": "New Zealand",
+      "type": "Meat",
+      "website": "https://www.homegrownfarmfreshmeats.co.nz"
+    },
+    {
+      "name": "Homegrown Butcher",
+      "delivery_areas": "Deli &amp; Pantry",
+      "type": "New Zealand",
+      "website": "Meat"
+    },
+    {
+      "name": "Caro's Wines",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.caros.co.nz/"
+    },
+    {
+      "name": "Animates",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://www.animates.co.nz"
+    },
+    {
+      "name": "Newflands",
+      "delivery_areas": "New Zealand",
+      "type": "Seafood",
+      "website": "https://Www.newflands.co.nz"
+    },
+    {
+      "name": "Good Honest",
+      "delivery_areas": "Christchurch",
+      "type": "Baked",
+      "website": "https://goodhonest.nz"
+    },
+    {
+      "name": "Mudbrick Vineyard &amp; Restaurant",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.mudbrick.co.nz/shop/"
+    },
+    {
+      "name": "Grin Natural Products",
+      "delivery_areas": "New Zealand",
+      "type": "Health",
+      "website": "https://www.grinnatural.co.nz/"
+    },
+    {
+      "name": "Neudorf Olives Extra Virgin Olive Oil",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://www.neudorfolives.co.nz"
+    },
+    {
+      "name": "The Casing Boutique",
+      "delivery_areas": "New Zealand",
+      "type": "Meat",
+      "website": "http://www.thecasingboutique.co.nz"
+    },
+    {
+      "name": "Part Time Rangers",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "Beverage"
+    },
+    {
+      "name": "Spring Water Solutions",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://springnz.co.nz/product/spring-box/"
+    },
+    {
+      "name": "Melora Manuka Products",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://melora.co.nz"
+    },
+    {
+      "name": "Gibbston Valley Wines",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.gibbstonvalley.com/nz/shop/"
+    },
+    {
+      "name": "Pet Depot",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://petdepot.co.nz"
+    },
+    {
+      "name": "Juno Gin",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://junogin.co.nz"
+    },
+    {
+      "name": "Woolworx",
+      "delivery_areas": "New Zealand",
+      "type": "Ready-Food",
+      "website": "https://www.woolwox.co.nz"
+    },
+    {
+      "name": "Flight Coffee",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://flightcoffee.co.nz/"
+    },
+    {
+      "name": "Antipodes Water Co.",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.antipodes.co.nz/buy-online"
+    },
+    {
+      "name": "Zealong Tea",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://zealong.com/shop/"
+    },
+    {
+      "name": "Nappy Days",
+      "delivery_areas": "New Zealand",
+      "type": "Health",
+      "website": "https://nappydays.co.nz"
+    },
+    {
+      "name": "Fleamail",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://www.fleamail.co.nz"
+    },
+    {
+      "name": "Regional Wines And Spirits",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.regionalwines.co.nz"
+    },
+    {
+      "name": "Made4Baby Natural Skincare",
+      "delivery_areas": "New Zealand",
+      "type": "Health",
+      "website": "https://www.made4baby.co.nz"
+    },
+    {
+      "name": "Do Gooder",
+      "delivery_areas": "New Zealand",
+      "type": "Health",
+      "website": "https://dogooder.co.nz/"
+    },
+    {
+      "name": "Lots of Baking Mixes",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://www.lotsof.co.nz"
+    },
+    {
+      "name": "Weta Coffee",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://wetacoffee.co.nz"
+    },
+    {
+      "name": "Parrot Treats",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://parrottreats.co.nz"
+    },
+    {
+      "name": "Aquadeli",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.aquadeli.co.nz"
+    },
+    {
+      "name": "Gourmet Gannet",
+      "delivery_areas": "Auckland",
+      "type": "Baked",
+      "website": "https://gourmetgannet.myshopify.com/"
+    },
+    {
+      "name": "Coffee Worx",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.coffeeworx.co.nz"
+    },
+    {
+      "name": "Heartland Brew Coffee",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.heartlandbrew.co.nz"
+    },
+    {
+      "name": "Canterbury Nut Company",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://www.canterburynuts.com"
+    },
+    {
+      "name": "Craft Box Direct",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.craftboxdirect.com"
+    },
+    {
+      "name": "Coopers Creek Vineyard",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.cooperscreek.co.nz"
+    },
+    {
+      "name": "Kahurangi Estate Wine",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.kahurangiwine.com"
+    },
+    {
+      "name": "PetPro",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://petpro.co.nz"
+    },
+    {
+      "name": "Luna Estate Winery",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://lunaestate.co.nz/"
+    },
+    {
+      "name": "Blackforest Gourmet Butchery",
+      "delivery_areas": "New Zealand",
+      "type": "Meat",
+      "website": "https://www.blackforestgoumet.co.nz"
+    },
+    {
+      "name": "Wooing Tree Wines",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.wooingtree.co.nz"
+    },
+    {
+      "name": "Palliser Estate Wines",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.palliser.co.nz/buy-wine/"
+    },
+    {
+      "name": "Sano + Humano Organic Skincare",
+      "delivery_areas": "New Zealand",
+      "type": "Health",
+      "website": "https://www.sanohumano.co.nz"
+    },
+    {
+      "name": "Jen's Cozinha",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://jens-cozinha.myshopify.com/collections"
+    },
+    {
+      "name": "Sacred Grounds",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.sacredgrounds.nz"
+    },
+    {
+      "name": "Wino’s Liquor",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.winos.co.nz"
+    },
+    {
+      "name": "Parrotdog Beer",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://parrotdog.co.nz/shop/"
+    },
+    {
+      "name": "Grounded Responsible Coffee",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.groundedcoffee.co.nz/"
+    },
+    {
+      "name": "Coffee4Home",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.coffee4home.co.nz"
+    },
+    {
+      "name": "Gibbston Microgreens",
+      "delivery_areas": "Queenstown",
+      "type": "Produce",
+      "website": "https://www.gibbstonmicrogreens.com/ordernow"
+    },
+    {
+      "name": "Pacific Harvest",
+      "delivery_areas": "New Zealand",
+      "type": "Produce",
+      "website": "https://pacificharvest.co.nz/"
+    },
+    {
+      "name": "Little Elephant Tonics",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.littleelephant.co"
+    },
+    {
+      "name": "JOIY WINES",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.joiy.co.nz"
+    },
+    {
+      "name": "Thirst Iced Beverages",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.thirst.co.nz/"
+    },
+    {
+      "name": "The Crafty Weka Bar",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://craftyweka.com"
+    },
+    {
+      "name": "Coffee Culture",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://shop.coffeeculture.co.nz/"
+    },
+    {
+      "name": "Addington Coffee Co-op",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.addingtoncoffee.org.nz/shop-online"
+    },
+    {
+      "name": "Dad's Pies",
+      "delivery_areas": "New Zealand",
+      "type": "Baked",
+      "website": "https://www.bidfoodhome.co.nz/"
+    },
+    {
+      "name": "Greenbean.nz",
+      "delivery_areas": "Wellington",
+      "type": "Produce",
+      "website": "https://greenbean.nz"
+    },
+    {
+      "name": "Whisky Galore",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.whiskygalore.co.nz"
+    },
+    {
+      "name": "Boot Camps Wellington",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://www.bootcampswellington.co.nz/"
+    },
+    {
+      "name": "Dr Bugs Popcorn",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://drbugs.co.nz/products/dr-bugs-popcorn-bumper-box"
+    },
+    {
+      "name": "Cured - Salami",
+      "delivery_areas": "New Zealand",
+      "type": "Meat",
+      "website": "https://www.cured.nz"
+    },
+    {
+      "name": "The Coffee Workshop",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.thecoffeeworkshop.co.nz"
+    },
+    {
+      "name": "Trickett's Grove Walnuts",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://www.trickettsgrove.nz/"
+    },
+    {
+      "name": "Mumma bear",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://www.mummab.co.nz"
+    },
+    {
+      "name": "Townshend Brewery",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "http://www.townshendbrewery.co.nz/"
+    },
+    {
+      "name": "Grasshopper Rock",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.grasshopperrock.co.nz/page/buy-wine/"
+    },
+    {
+      "name": "Vino Fino",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://vinofino.co.nz"
+    },
+    {
+      "name": "Mahi Wine",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.mahiwine.co.nz/our-wines/"
+    },
+    {
+      "name": "Karma Drinks",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://shop.karmacola.co.nz"
+    },
+    {
+      "name": "White Picnic",
+      "delivery_areas": "Waikato",
+      "type": "Ready-Food",
+      "website": "https://www.whitepicnic.nz"
+    },
+    {
+      "name": "Advintage Wines",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.advintage.co.nz/"
+    },
+    {
+      "name": "The Kiwi Butcher Shop",
+      "delivery_areas": "Taranaki",
+      "type": "Meat",
+      "website": "https://thekiwibutchershop.co.nz/"
+    },
+    {
+      "name": "Mt Cook Alpine Salmon",
+      "delivery_areas": "New Zealand",
+      "type": "Seafood",
+      "website": "https://alpinesalmon.co.nz/shop/"
+    },
+    {
+      "name": "Terra Sancta",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://terrasancta.co.nz"
+    },
+    {
+      "name": "Waikanae Butchery",
+      "delivery_areas": "Otaki,Tawa",
+      "type": "Meat",
+      "website": "https://terrywbutcher@gmail.com"
+    },
+    {
+      "name": "Uppercuts Meatbox",
+      "delivery_areas": "New Zealand",
+      "type": "Meat",
+      "website": "https://www.uppercutsbutchery.co.nz/meat-boxes"
+    },
+    {
+      "name": "Banjo Brews Organic Kombucha",
+      "delivery_areas": "New Zealand",
+      "type": "Produce",
+      "website": "https://www.banjobrews.co.nz"
+    },
+    {
+      "name": "Sublime Coffee Roasters",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.sublimecoffeeroasters.co.nz"
+    },
+    {
+      "name": "High Country Salmon",
+      "delivery_areas": "New Zealand",
+      "type": "Seafood",
+      "website": "https://www.highcountrysalmon.co.nz"
+    },
+    {
+      "name": "Spade Oak Wines",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.spadeoak.co.nz"
+    },
+    {
+      "name": "t leaf T",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.tleaft.co.nz"
+    },
+    {
+      "name": "Richmond Plains Organic Wines",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.richmondplains.co.nz"
+    },
+    {
+      "name": "8 Wired Brewing",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://8wired.co.nz/collections/store"
+    },
+    {
+      "name": "Te Mania Organic Wines",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.temaniawines.co.nz"
+    },
+    {
+      "name": "Eva's Smoothies",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://evas.co.nz/"
+    },
+    {
+      "name": "Redmetal Vineyards",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "http://www.redmetalvineyards.co.nz/"
+    },
+    {
+      "name": "K9cuisine.co.nz",
+      "delivery_areas": "Auckland,Waikato",
+      "type": "Other",
+      "website": "http://k9cuisine.co.nz"
+    },
+    {
+      "name": "Wickedly Indulgent Gifts",
+      "delivery_areas": "New Zealand",
+      "type": "Other",
+      "website": "https://wickedlyindulgent.co.nz/"
+    },
+    {
+      "name": "Nectar Body &amp; Bath",
+      "delivery_areas": "New Zealand",
+      "type": "Health",
+      "website": "https://www.nectarbodyandbath.com"
+    },
+    {
+      "name": "The Bakery Basket",
+      "delivery_areas": "New Zealand",
+      "type": "Baked",
+      "website": "https://thebakerybasket.co.nz"
+    },
+    {
+      "name": "Broken Heart Spirits",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.brokenheartspirits.com"
+    },
+    {
+      "name": "Island Bay &amp; Strathmore Butcheries",
+      "delivery_areas": "Wellington",
+      "type": "Meat",
+      "website": "https://orders@islandbaybutchery.co.nz"
+    },
+    {
+      "name": "Pomeroy's Coffee &amp; Tea Company",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.pomeroys.co.nz"
+    },
+    {
+      "name": "Columbus Coffee Online",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://columbuscoffee.online/"
+    },
+    {
+      "name": "Jacks Coffee",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://jackscoffee.co.nz/"
+    },
+    {
+      "name": "Who ate all the Pies?",
+      "delivery_areas": "New Zealand",
+      "type": "Ready-Food",
+      "website": "https://www.whoateallthepies.co.nz"
+    },
+    {
+      "name": "Jeymar Soap &amp; Body",
+      "delivery_areas": "New Zealand",
+      "type": "Health",
+      "website": "https://jeymarsoap.nz"
+    },
+    {
+      "name": "Will &amp; Able",
+      "delivery_areas": "New Zealand",
+      "type": "Health",
+      "website": "https://willandable.co.nz/?utm_source=delivereat&amp;utm_medium=website&amp;utm_campaign=delivereat"
+    },
+    {
+      "name": "First Light Wagyu",
+      "delivery_areas": "New Zealand",
+      "type": "Meat",
+      "website": "https://meatclub.firstlight.farm/"
+    },
+    {
+      "name": "Gorilla Coffee",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.gorillacoffee.co.nz"
+    },
+    {
+      "name": "Vivace Espresso",
+      "delivery_areas": "New Zealand",
+      "type": "Beverage",
+      "website": "https://www.vivaceespresso.co.nz"
+    }
+  ]

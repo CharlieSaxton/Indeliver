@@ -1,0 +1,16 @@
+{
+  "name": "corona-program",
+  "version": "1.0.0",
+  "description": "",
+  "main": "data-loader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^7.13.2",
+    "firebase-admin": "^8.10.0",
+    "firebase-app": "0.0.1"
+  }
+}
