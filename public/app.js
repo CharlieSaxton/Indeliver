@@ -11,6 +11,7 @@
     var filters;
 
     function locatorButtonPressed() {
+        disableGoogleAutocomplete();
         $("#locator-button").addClass("loading");
 
         navigator.geolocation.getCurrentPosition(function (position) {
@@ -42,8 +43,9 @@
 
     function setAddressToInputField(address) {
         $("#address").val(address);
-        $("#address").focus();
+        $("#search-form").submit();
         $("#locator-button").removeClass("loading");
+        enableGoogleAutocomplete();
     }
 
     function search(event) {
@@ -166,20 +168,36 @@
             }
         })
     }
-         
-    $(document).ready(function () {
-        var autocomplete;
+
+    var autocomplete;
+    var autocompleteListener;
+    function disableGoogleAutocomplete() {
+        if (autocomplete !== undefined) {
+                google.maps.event.removeListener(autocompleteListener);
+                google.maps.event.clearInstanceListeners(autocomplete);
+                $(".pac-container").remove();
+
+                console.log('disable autocomplete to GOOGLE');
+         }
+    }
+    function enableGoogleAutocomplete() {
+
         autocomplete = new google.maps.places.Autocomplete($("#address").get(0), {
             types: ['address'],
             componentRestrictions: {country: 'nz'}
         });
         
  
-        autocomplete.addListener('place_changed', function() {
-            // causes double ups when click enter
-            //$("#search-form").submit();
-            $("#address").focus();
+        autocompleteListener = autocomplete.addListener('place_changed', function() {
+            $("#search-form").submit();
+            //$("#address").focus();
         });
+
+        console.log('set autocomplete to GOOGLE');
+    }
+         
+    $(document).ready(function () {
+        enableGoogleAutocomplete();
 
        $("#locator-button").on('click', locatorButtonPressed);
 
