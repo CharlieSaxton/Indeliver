@@ -104,6 +104,8 @@ function search(event) {
             }
             
         });
+        $("#select-all").show();
+        $("#unselect-all").show();
         
         
     });
@@ -208,6 +210,8 @@ $(document).ready(function () {
 
     $("#filter-section").hide();
     $("#no-results").hide();
+    $("#select-all").hide();
+    $("#unselect-all").hide();
 });
 
 function deliveryAreaCheck(shop, user){
