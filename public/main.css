@@ -130,6 +130,20 @@ button :hover{
     margin-top: -10px;
 }
 
+#select-all{
+    position: absolute;
+    width: 17px;
+    margin-top:-115px;
+    left: 27%;
+}
+
+#unselect-all{
+    position: absolute;
+    width: 17px;
+    margin-top:-115px;
+    right: 27%;
+}
+
 input:checked + .toggle1{
     background-color: #7c75e3;
     color: #ffffff;
@@ -210,7 +224,7 @@ input:checked + .toggle1{
 }
 
 ::placeholder {
-    color: black;
+    color: #878787;
     font-size: 15px;
     font-weight: lighter;
 }
