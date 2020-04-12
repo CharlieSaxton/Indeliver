@@ -9,19 +9,22 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
+    
     <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
 
     <script>
 
         // Initialize Cloud Firestore through Firebase
         firebase.initializeApp({
-            apiKey: 'AIzaSyBQo3KkP2-EcDUyaj8QG1LdzDgFmqrB3GA',
+            apiKey: 'AIzaSyCi5gnCMdu2EVE3fCUCBtcp9xSAWmEz1TQ',
             authDomain: 'whodeliverstomyhome.firebase.com',
             projectId: 'whodeliverstomyhome'
         });
 
         var db = firebase.firestore();
+        var provider = new firebase.auth.GoogleAuthProvider();
 
         function registerBusiness(event) {
 
@@ -43,11 +46,49 @@
 
             return false;
         }
+
+
+
+        function login() {
+            console.log("here");
+            firebase.auth().signInWithPopup(provider).then(function(result) {
+                console.log("here1");
+              // This gives you a Google Access Token. You can use it to access the Google API.
+              var token = result.credential.accessToken;
+              // The signed-in user info.
+              var user = result.user;
+              // ...
+            }).catch(function(error) {
+                console.log("here2");
+                console.dir(error);
+              // Handle Errors here.
+              var errorCode = error.code;
+              var errorMessage = error.message;
+              // The email of the user's account used.
+              var email = error.email;
+              // The firebase.auth.AuthCredential type that was used.
+              var credential = error.credential;
+              // ...
+            });
+
+        }
+
+        function logout() {
+            firebase.auth().signOut().then(function() {
+              // Sign-out successful.
+            }).catch(function(error) {
+              // An error happened.
+            });
+        }
              
     </script>    
 </head>
 <body>
     <h3 class="form-header">Please fill out this form to register a business with our database</h3>
+    <div onclick="login()">login</div>
+    <p>
+    <div onclick="logout()">logout</div>
+    <p>
 
         <form id='business' action="JavaScript:registerBusiness()" class="reg-business">
                 <div class="reg-business-box"></div>

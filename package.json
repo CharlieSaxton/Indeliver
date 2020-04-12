@@ -9,8 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "firebase": "^7.13.2",
+    "email-crawler": "^1.0.4",
+    "firebase": "^7.14.0",
     "firebase-admin": "^8.10.0",
-    "firebase-app": "0.0.1"
+    "firebase-app": "0.0.1",
+    "puppeteer": "^2.1.1"
   }
 }

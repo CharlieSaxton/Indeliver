@@ -1,15 +1,21 @@
-const firebase = require('./node_modules/firebase');
+
 
 const data = require("./data.json");
 const collectionKey = "businesses"; //name of the collection
 
-firebase.initializeApp({
-    apiKey: 'AIzaSyBQo3KkP2-EcDUyaj8QG1LdzDgFmqrB3GA',
-    authDomain: 'whodeliverstomyhome.firebase.com',
-    projectId: 'whodeliverstomyhome'
+var admin = require("firebase-admin");
+
+var serviceAccount = require("./whodeliverstomyhome-firebase-adminsdk-uffqv-469ef99d01.json");
+
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://whodeliverstomyhome.firebaseio.com"
 });
 
-var db = firebase.firestore();
+
+
+var db = admin.firestore();
 
 const settings = {timestampsInSnapshots: true};
 db.settings(settings);
