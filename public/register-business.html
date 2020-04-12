@@ -19,7 +19,7 @@
         // Initialize Cloud Firestore through Firebase
         firebase.initializeApp({
             apiKey: 'AIzaSyCi5gnCMdu2EVE3fCUCBtcp9xSAWmEz1TQ',
-            authDomain: 'whodeliverstomyhome.firebase.com',
+            authDomain: 'whodeliverstomyhome.firebaseapp.com',
             projectId: 'whodeliverstomyhome'
         });
 
@@ -51,6 +51,7 @@
 
         function login() {
             console.log("here");
+
             firebase.auth().signInWithPopup(provider).then(function(result) {
                 console.log("here1");
               // This gives you a Google Access Token. You can use it to access the Google API.
