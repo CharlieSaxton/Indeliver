@@ -123,37 +123,7 @@ function search(event) {
         else {
             $businessDiv.append(`<p class='delivery-area'>Delivers to ${deliveryAreaArr[0]}...</p>`);
         }
-
-        //needs changingvvvvvvvvvvvv
-        if (`${doc.data().type}` == "Baked") {
-            $businessDiv.append(`<p class='emoji'>&#129366; Baked</p>`);
-        }
-        else if (`${doc.data().type}` == "Produce") {
-            $businessDiv.append(`<p class='emoji'>&#129382; Produce</p>`);
-        }
-        else if (`${doc.data().type}` == "Beverage") {
-            $businessDiv.append(`<p class='emoji'>&#127870; Beverage</p>`);
-        }
-        else if (`${doc.data().type}` == "Seafood") {
-            $businessDiv.append(`<p class='emoji'>&#127844; Seafood</p>`);
-        }
-        else if (`${doc.data().type}` == "Health") {
-            $businessDiv.append(`<p class='emoji'>💊 Health</p>`);
-        }
-        else if (`${doc.data().type}` == "Meat") {
-            $businessDiv.append(`<p class='emoji'>🥩 Meat</p>`);
-        }
-        else if (`${doc.data().type}` == "Other") {
-            $businessDiv.append(`<p class='emoji'>&#128085; Other</p>`);
-        }
-        else if (`${doc.data().type}` == "Dairy") {
-            $businessDiv.append(`<p class='emoji'>&#129371; Dairy</p>`);
-        }
-        else if (`${doc.data().type}` == "Ready-Food") {
-            $businessDiv.append(`<p class='emoji'>&#128722; Ready-Food</p>`);
-        }
-        //needs changing^^^^^^^^^^^^
-
+        $businessDiv.append(`<p class='emoji'>${doc.data().type}</p>`);
         return $businessDiv;
     }
 }
