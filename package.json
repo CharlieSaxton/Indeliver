@@ -11,7 +11,7 @@
   "dependencies": {
     "email-crawler": "^1.0.4",
     "firebase": "^7.14.0",
-    "firebase-admin": "^8.10.0",
+    "firebase-admin": "^11.4.1",
     "firebase-app": "0.0.1",
     "puppeteer": "^2.1.1"
   }
